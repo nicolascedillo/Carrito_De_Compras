@@ -20,7 +20,7 @@ public class Carrito {
 
     @Override
     public String toString() {
-        return "Carrito \n" + items;
+        return "Carrito \n" + items + "Total: " + calcularTotal();
     }
 
     public double calcularTotal() {

@@ -28,7 +28,8 @@ public class Item_Carrito {
     @Override
     public String toString() {
         return "\tItem: " + producto +
-                ", Cantidad: " + cantidad + "\n";
+                ", Cantidad: " + cantidad +
+                ", Total (Item) : " + calcularPrecio() + "\n";
     }
 
     public  double calcularPrecio() {
