@@ -1,19 +1,40 @@
 package ec.edu.ups.poo;
 
-import ec.edu.ups.poo.models.Carrito;
-import ec.edu.ups.poo.models.Producto;
+import ec.edu.ups.poo.servicio.CarritoServiceImpl;
+import ec.edu.ups.poo.servicio.CarritoService;
+import ec.edu.ups.poo.modelo.Producto;
+import ec.edu.ups.poo.modelo.Item_Carrito;
 
 public class Main {
     public static void main(String[] args) {
-        Producto jabon = new Producto("001","Jabón",3);
-        Producto manzanas = new Producto("002","Manzanas",1.5);
-        Producto esfero = new Producto("003","Esfero",0.5);
+        // Crear servicio de carrito
+        CarritoService carrito = new CarritoServiceImpl();
 
-        Carrito carrito = new Carrito();
-        carrito.addItem(jabon,1);
-        carrito.addItem(manzanas,5);
-        carrito.addItem(esfero,3);
+        // Crear productos
+        Producto p1 = new Producto(1, "Mouse", 15.0);
+        Producto p2 = new Producto(2, "Teclado", 25.0);
 
-        System.out.println(carrito);
+        // Agregar productos al carrito
+        carrito.agregarProducto(p1, 2);  // 2 x $15 = $30
+        carrito.agregarProducto(p2, 1);  // 1 x $25 = $25
+
+        // Mostrar los ítems
+        System.out.println("Contenido del carrito:");
+        for (Item_Carrito item : carrito.obtenerItems()) {
+            System.out.println("- " + item);
+        }
+
+        // Calcular total
+        double total = carrito.calcularTotal();
+        System.out.println("Total: $" + total);
+
+        // Verificar si está vacío
+        System.out.println("¿Carrito vacío? " + carrito.estaVacio());
+
+        // Eliminar producto y vaciar carrito
+        carrito.eliminarProducto(1);
+        carrito.vaciarCarrito();
+
+        System.out.println("Carrito vaciado. ¿Vacío ahora? " + carrito.estaVacio());
     }
 }

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ec.edu.ups.poo.vista.ProductoView">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="412" height="238"/>
+    </constraints>
+    <properties>
+      <background color="-3747877"/>
+      <font/>
+      <foreground color="-460545"/>
+    </properties>
+    <border type="none" title="Registrar Producto" title-justification="2" title-position="3">
+      <font name="DialogInput" size="16" style="1"/>
+      <title-color color="-1767168"/>
+    </border>
+    <children>
+      <component id="4f066" class="javax.swing.JLabel" binding="codigo">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" style="1"/>
+          <labelFor value="de76e"/>
+          <text value="Código del producto"/>
+        </properties>
+      </component>
+      <component id="4ef17" class="javax.swing.JLabel" binding="nombre">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" style="1"/>
+          <labelFor value="1eebf"/>
+          <text value="Nombre del producto:"/>
+        </properties>
+      </component>
+      <component id="c9b70" class="javax.swing.JLabel" binding="precio">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" style="1"/>
+          <labelFor value="ce8e5"/>
+          <text value="Precio del producto:"/>
+        </properties>
+      </component>
+      <component id="1eebf" class="javax.swing.JTextField" binding="textFieldNombre">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+        </properties>
+      </component>
+      <component id="ce8e5" class="javax.swing.JTextField" binding="textFieldPrecio">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <enabled value="true"/>
+          <horizontalAlignment value="2"/>
+        </properties>
+      </component>
+      <component id="16503" class="javax.swing.JButton" binding="limpiarButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="2" height="2"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7434002"/>
+          <enabled value="true"/>
+          <foreground color="-2314"/>
+          <hideActionText value="false"/>
+          <text value="Limpiar"/>
+        </properties>
+      </component>
+      <component id="a750d" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-10249183"/>
+          <text value="Guardar"/>
+        </properties>
+      </component>
+      <component id="de76e" class="javax.swing.JTextField" binding="textFieldCodigo">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+        </properties>
+      </component>
+      <component id="7f5f3" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e1814" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="4234e" class="javax.swing.JButton" binding="salirButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1753078"/>
+          <text value="Salir"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
